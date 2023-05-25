@@ -26,7 +26,7 @@ struct WeatherView: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .background(Color(hue: 0.656, saturation: 0.787, brightness: 0.54))
                 .cornerRadius(10)
-                .shadow(color: .black, radius: 40, x: 5, y: 10)
+                .shadow(color: Color(hue: 0.656, saturation: 0.787, brightness: 0.50), radius: 50, x: 5, y: 10)
                 
                 Spacer()
                 
@@ -89,6 +89,10 @@ struct WeatherView: View {
         .edgesIgnoringSafeArea(.bottom)
         .background(Color(hue: 0.656, saturation: 0.787, brightness: 0.354))
         .preferredColorScheme(.dark)
+        .onAppear {
+            let impactMed = UIImpactFeedbackGenerator(style: .medium)
+                impactMed.impactOccurred()
+        }
     }
 }
 

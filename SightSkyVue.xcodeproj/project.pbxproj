@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E2323CF2A1EE66E009B1833 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E2323CE2A1EE66E009B1833 /* WidgetKit.framework */; };
+		4E2323D12A1EE66E009B1833 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E2323D02A1EE66E009B1833 /* SwiftUI.framework */; };
+		4E2323D42A1EE66E009B1833 /* SightSkyVueWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2323D32A1EE66E009B1833 /* SightSkyVueWidgetBundle.swift */; };
+		4E2323D62A1EE66E009B1833 /* SightSkyVueWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2323D52A1EE66E009B1833 /* SightSkyVueWidget.swift */; };
+		4E2323D82A1EE670009B1833 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E2323D72A1EE670009B1833 /* Assets.xcassets */; };
+		4E2323DC2A1EE670009B1833 /* SightSkyVueWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4E2323CC2A1EE66E009B1833 /* SightSkyVueWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4E2441C52A1CF4E400552C1C /* SightSkyVueApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2441C42A1CF4E400552C1C /* SightSkyVueApp.swift */; };
 		4E2441C72A1CF4E400552C1C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2441C62A1CF4E400552C1C /* ContentView.swift */; };
 		4E2441C92A1CF4E400552C1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E2441C82A1CF4E400552C1C /* Assets.xcassets */; };
@@ -22,7 +28,38 @@
 		4E8A06A72A1D2B51008781D5 /* WeatherRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8A06A62A1D2B51008781D5 /* WeatherRowView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		4E2323DA2A1EE670009B1833 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E2441B92A1CF4E300552C1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E2323CB2A1EE66E009B1833;
+			remoteInfo = SightSkyVueWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4E2323DD2A1EE670009B1833 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4E2323DC2A1EE670009B1833 /* SightSkyVueWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		4E2323CC2A1EE66E009B1833 /* SightSkyVueWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SightSkyVueWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E2323CE2A1EE66E009B1833 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		4E2323D02A1EE66E009B1833 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		4E2323D32A1EE66E009B1833 /* SightSkyVueWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightSkyVueWidgetBundle.swift; sourceTree = "<group>"; };
+		4E2323D52A1EE66E009B1833 /* SightSkyVueWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightSkyVueWidget.swift; sourceTree = "<group>"; };
+		4E2323D72A1EE670009B1833 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4E2323D92A1EE670009B1833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E2441C12A1CF4E400552C1C /* SightSkyVue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SightSkyVue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E2441C42A1CF4E400552C1C /* SightSkyVueApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightSkyVueApp.swift; sourceTree = "<group>"; };
 		4E2441C62A1CF4E400552C1C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,6 +77,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4E2323C92A1EE66E009B1833 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E2323D12A1EE66E009B1833 /* SwiftUI.framework in Frameworks */,
+				4E2323CF2A1EE66E009B1833 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4E2441BE2A1CF4E300552C1C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -50,10 +96,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E2323CD2A1EE66E009B1833 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E2323CE2A1EE66E009B1833 /* WidgetKit.framework */,
+				4E2323D02A1EE66E009B1833 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4E2323D22A1EE66E009B1833 /* SightSkyVueWidget */ = {
+			isa = PBXGroup;
+			children = (
+				4E2323D32A1EE66E009B1833 /* SightSkyVueWidgetBundle.swift */,
+				4E2323D52A1EE66E009B1833 /* SightSkyVueWidget.swift */,
+				4E2323D72A1EE670009B1833 /* Assets.xcassets */,
+				4E2323D92A1EE670009B1833 /* Info.plist */,
+			);
+			path = SightSkyVueWidget;
+			sourceTree = "<group>";
+		};
 		4E2441B82A1CF4E300552C1C = {
 			isa = PBXGroup;
 			children = (
 				4E2441C32A1CF4E400552C1C /* SightSkyVue */,
+				4E2323D22A1EE66E009B1833 /* SightSkyVueWidget */,
+				4E2323CD2A1EE66E009B1833 /* Frameworks */,
 				4E2441C22A1CF4E400552C1C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				4E2441C12A1CF4E400552C1C /* SightSkyVue.app */,
+				4E2323CC2A1EE66E009B1833 /* SightSkyVueWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -121,6 +190,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4E2323CB2A1EE66E009B1833 /* SightSkyVueWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E2323E02A1EE670009B1833 /* Build configuration list for PBXNativeTarget "SightSkyVueWidgetExtension" */;
+			buildPhases = (
+				4E2323C82A1EE66E009B1833 /* Sources */,
+				4E2323C92A1EE66E009B1833 /* Frameworks */,
+				4E2323CA2A1EE66E009B1833 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SightSkyVueWidgetExtension;
+			productName = SightSkyVueWidgetExtension;
+			productReference = 4E2323CC2A1EE66E009B1833 /* SightSkyVueWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		4E2441C02A1CF4E300552C1C /* SightSkyVue */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E2441CF2A1CF4E400552C1C /* Build configuration list for PBXNativeTarget "SightSkyVue" */;
@@ -128,10 +214,12 @@
 				4E2441BD2A1CF4E300552C1C /* Sources */,
 				4E2441BE2A1CF4E300552C1C /* Frameworks */,
 				4E2441BF2A1CF4E300552C1C /* Resources */,
+				4E2323DD2A1EE670009B1833 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4E2323DB2A1EE670009B1833 /* PBXTargetDependency */,
 			);
 			name = SightSkyVue;
 			packageProductDependencies = (
@@ -150,6 +238,9 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					4E2323CB2A1EE66E009B1833 = {
+						CreatedOnToolsVersion = 14.3;
+					};
 					4E2441C02A1CF4E300552C1C = {
 						CreatedOnToolsVersion = 14.3;
 					};
@@ -171,11 +262,20 @@
 			projectRoot = "";
 			targets = (
 				4E2441C02A1CF4E300552C1C /* SightSkyVue */,
+				4E2323CB2A1EE66E009B1833 /* SightSkyVueWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4E2323CA2A1EE66E009B1833 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E2323D82A1EE670009B1833 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4E2441BF2A1CF4E300552C1C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -189,6 +289,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4E2323C82A1EE66E009B1833 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E2323D62A1EE66E009B1833 /* SightSkyVueWidget.swift in Sources */,
+				4E2323D42A1EE66E009B1833 /* SightSkyVueWidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4E2441BD2A1CF4E300552C1C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -208,7 +317,69 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		4E2323DB2A1EE670009B1833 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E2323CB2A1EE66E009B1833 /* SightSkyVueWidgetExtension */;
+			targetProxy = 4E2323DA2A1EE670009B1833 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		4E2323DE2A1EE670009B1833 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HXDK8H2H24;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SightSkyVueWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SightSkyVueWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.augusto.SightSkyVue.SightSkyVueWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4E2323DF2A1EE670009B1833 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HXDK8H2H24;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SightSkyVueWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SightSkyVueWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.augusto.SightSkyVue.SightSkyVueWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		4E2441CD2A1CF4E400552C1C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -328,6 +499,7 @@
 		4E2441D02A1CF4E400552C1C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -360,6 +532,7 @@
 		4E2441D12A1CF4E400552C1C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -392,6 +565,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4E2323E02A1EE670009B1833 /* Build configuration list for PBXNativeTarget "SightSkyVueWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E2323DE2A1EE670009B1833 /* Debug */,
+				4E2323DF2A1EE670009B1833 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4E2441BC2A1CF4E300552C1C /* Build configuration list for PBXProject "SightSkyVue" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
