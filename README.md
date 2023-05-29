@@ -7,3 +7,6 @@
 
 > Also using OpenWeatherApp API to get the metrics
 
+> App running 👇
+
+https://github.com/AugustoBSimionato/SightSkyVue/assets/72254418/e0408d14-a553-4af4-a676-5a240ee944d1
